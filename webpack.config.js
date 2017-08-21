@@ -1,26 +1,36 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './index.js',
+  entry: [
+      './src/app/Index.jsx',
+      './src/app/style/style.less'
+  ],
   output: {
-    filename: './bundle.js',
-    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+    path: path.join(__dirname, 'public')
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        loader : 'babel-loader',
+        query: {
+          presets:['react']
+        }
       },
-      {
-        test: /\.css$/,
-        use: ['style-loader'],
-      },
+        {
+            test: /.less$/,
+            use: ExtractTextPlugin.extract({
+                fallback: 'style-loader',
+                use: ['css-loader', 'less-loader']
+            })
+        }
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin()
-  ],
+    plugins: [
+        new ExtractTextPlugin("style.css"),
+    ]
 };
