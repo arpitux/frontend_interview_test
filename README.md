@@ -1,46 +1,24 @@
-# Front-End Interview Test
+# Front-End Interview Test - McMakler
 
-This is a simple front-end code challenge created to serve two purposes:
+Simple React web app with Login and List view page
 
-1. Show off your skills,
-1. Give us a better understanding of your skills.
+### Prerequisites
 
-## The Task
+`node` and `npm` should be installed on your local machine
 
-The programming challenge exists in 2 parts:
-* Part A: HTML + CSS
-* Part B: Javascript
+### Running App
 
-### PART A: HTML + CSS
+1. Download repository
+2. From the root directory run following commands from terminal
 
-![Screen](https://raw.githubusercontent.com/mcmakler/frontend_interview_test/master/assets/fe_test_example_screen.png)
+```
+npm install
+npm run serve
+```
 
-* Create a layout based on the given screen (fe_test_example_screen.png).
-* Style the layout consistently and beautifully, adhering as closely to the design as possible.
-* **NOTE:** You are free to use any preprocessor you wish, or write raw CSS. *Bonus points for an explanation of your choice.*
+2. Open `localhost:8080/public/index.html`
 
-### PART B: Javascript
+## Authors
 
-* Consume our public API @ https://api.mcmakler.de/v1/advertisements to retrieve a list of advertisements of vacant apartments.
-* Display the first 10 advertisements in the HTML + CSS layout created in step A, sticking to the layout, placing data where it fits.
-* **NOTE:** You are free to use any framework you wish, or do it VanillaJS style. *Brief explanation of your choice.*
+* **[Arpit Jain](http://arpitjain.me)**
 
-## Additional Instructions
-
-* Leave comments where you were not sure how to properly proceed.
-* No pull requests
-* ES6 and above
-
-## Bonus Points
-
-* Tests
-* Clean code!
-* Knowledge of application flow.
-* Knowledge of modern best practices/coding patterns.
-* Demonstration of good state management.
-* Usage of frameworks/supersets.
-* Pixel perfection.
-* Componential thinking.
-* Usage of linters.
-* Git hooks.
-* Usage of Material Design concepts
