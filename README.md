@@ -16,7 +16,7 @@ npm install
 npm run serve
 ```
 
-3. NOTE: The API user for this test does not support cross-origin request. So I had to use a chrome browser [plugin](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi) to make the API work for me from `localhost`. 
+3. NOTE: The API used for this test does not support cross-origin request. So I had to use a chrome browser [plugin](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi) to make the API work for me from `localhost`. 
   Please install it if required.
 
 4. Open `localhost:8080/public/index.html`
