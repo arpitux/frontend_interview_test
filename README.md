@@ -1,6 +1,6 @@
 # Front-End Interview Test - McMakler
 
-Simple React web app with Login and List view page
+This is a simple front-end code challenge test as an interview for McMakler. I used React because with React it's very quick and easy to build front-end of applications. Moreover I recently started working on React and I love it. So I thought to use it for this test.
 
 ### Prerequisites
 
