@@ -18,6 +18,10 @@ npm run serve
 
 2. Open `localhost:8080/public/index.html`
 
+### Output
+
+![alt text](https://raw.githubusercontent.com/arpitux/frontend_interview_test/master/assets/output.png)
+
 ## Authors
 
 * **[Arpit Jain](http://arpitjain.me)**
